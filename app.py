@@ -49,7 +49,7 @@ sign_names = {
         42: 'End of no passing by vehicles over 3.5 metric tons'}
 
 st.title("Traffic Sign Classifier")
-st.set_option('deprecation.showfileUploaderEncoding', False)
+# st.set_option('deprecation.showfileUploaderEncoding', False)
 activites = ["Classification","About"]
 choices = st.sidebar.selectbox("Select Activities", activities)
 if choices == "Classification":
