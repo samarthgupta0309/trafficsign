@@ -50,7 +50,7 @@ sign_names = {
 
 st.title("Traffic Sign Classifier")
 # st.set_option('deprecation.showfileUploaderEncoding', False)
-activites = ["Classification","About"]
+activities = ["Classification","About"]
 choices = st.sidebar.selectbox("Select Activities", activities)
 if choices == "Classification":
         uploaded_file = st.file_uploader("Choose an image...", type=['png','jpg','jpeg'])
