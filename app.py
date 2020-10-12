@@ -47,12 +47,12 @@ sign_names = {
         40: 'Roundabout mandatory',
         41: 'End of no passing',
         42: 'End of no passing by vehicles over 3.5 metric tons'}
-
-st.title("Traffic Sign Classifier")
+st.title("Project component")
 # st.set_option('deprecation.showfileUploaderEncoding', False)
-activities = ["Classification","About"]
+activites = ["Classification","Working","About us"]
 choices = st.sidebar.selectbox("Select Activities", activities)
 if choices == "Classification":
+        st.header("TRAFFIC SIGN CLASSIFICATION")
         uploaded_file = st.file_uploader("Choose an image...", type=['png','jpg','jpeg'])
         if uploaded_file is not None:
 
@@ -68,5 +68,19 @@ if choices == "Classification":
 
                         res = sign_names.get(label)
                         st.success(res)
-elif choices == "About":
-        st.write("Fun in ML SAMARTH GUPTA")
+elif choices == "Working":
+        st.header("Working")
+        st.text("")
+        st.markdown("**This project aims to classify the traffic sign**")
+        st.text("")
+        st.markdown("**_About_ _DataSet_** :")
+        st.write("We used the German data set to import the images into this project.The German Traffic Sign Benchmark is a multi-class, single-image classification challenge held at the International Joint Conference on Neural Networks (IJCNN) 2011.")
+        st.text("")
+        st.markdown("**_Working_** :")
+        st.markdown('<p>The starting step of this project was to load the data set, We have used the numpy library to calculate summary statistics of the traffic signs data set:The size of training set is 34799, The size of the validation set is 4410, The size of test set is 12630, The shape of a traffic sign image is (32, 32, 3), The number of unique classes/labels in the data set is 43. After that we explored,summarized and visualized the data set .Design, training and testing of the model architecture occured after we had visualized the whole data set. Then, we used the model to make predictions on new images and analyse the probabilities of the new image. Finally we test the model with a data set.And deployed the project to make an interactive web app using  streamlit.</p>')
+elif choices == "About us":
+        st.header("About us :")
+        st.write("We are 3rd year electronics and communication students and we have done this project for Control Systems under Dr Rajesh R")
+        st.text("")
+        st.write("And we have made this project with understanding of algo of ml while incorporating deep leaning using  CNN and this is the final product which analyses different traffic signs and classifies them")
+        st.text("Team - Hritik Jha, Aryaman Chandra, Kartik Tripathi, Ankesh Patel")
