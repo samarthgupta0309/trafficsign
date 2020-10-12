@@ -83,6 +83,7 @@ elif choices == "About us":
         st.write("We are 3rd year electronics and communication students and we have done this project for Control Systems under Dr Rajesh R")
         st.text("")
         st.write("And we have made this project with understanding of algo of ml while incorporating deep leaning using  CNN and this is the final product which analyses different traffic signs and classifies them")
-        st.text("Team - Hritik Jha, Aryaman Chandra, Kartik Tripathi, Ankesh Patel")
+#         st.text("Team - Hritik Jha, Aryaman Chandra, Kartik Tripathi, Ankesh Patel")
         images_on_page = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg"]
-        st.image(images_on_page, width=200, caption=images_on_page)
+        name_img = ["Kartik Tripathi", "Aryaman Chandra","Ankesh Patel","Hritik Jha"]
+        st.image(images_on_page, width=150, caption=name_img)
