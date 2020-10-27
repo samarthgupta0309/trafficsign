@@ -71,6 +71,8 @@ if choices == "Classification":
 
                         res = sign_names.get(label)
                         st.success(res)
+        st.write("ARCHITECTURE:")
+        st.image("architect..PNG")
 elif choices == "Working":
         st.header("Working")
         st.text("")
