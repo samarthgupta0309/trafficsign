@@ -53,6 +53,9 @@ activities = ["Classification","Working","About us"]
 choices = st.sidebar.selectbox("Select Activities", activities)
 if choices == "Classification":
         st.header("TRAFFIC SIGN CLASSIFICATION")
+        st.markdown("**_Motivation_** :")
+        st.write("With the development of automotive intelligent technology,many different famous car companies like Mercedes-Benz and BMW have actively invested in ADAS (Advanced Driver Assistance System) research. Commercialized ADAS also include TSR(Traffic SignRecognition) systems to remind the drivers to pay attention to the speed and help in preventing road accidents. With the increase in demand of TSR (Traffic Sign Recognition) it is impossible for others to understand the advantages and need of thissystem")
+        st.write("")
         traffic_image = 'trafficsigns.png'
         st.image(traffic_image, caption = "Let the machine do the work")
         st.text("")
@@ -83,6 +86,9 @@ elif choices == "Working":
         st.text("")
         st.markdown("**_Working_** :")
         st.markdown('The starting step of this project was to load the data set, We have used the numpy library to calculate summary statistics of the traffic signs data set:The size of training set is 34799, The size of the validation set is 4410, The size of test set is 12630, The shape of a traffic sign image is (32, 32, 3), The number of unique classes/labels in the data set is 43. After that we explored,summarized and visualized the data set .Design, training and testing of the model architecture occured after we had visualized the whole data set. Then, we used the model to make predictions on new images and analyse the probabilities of the new image. Finally we test the model with a data set.And deployed the project to make an interactive web app using  streamlit.')
+        st.image("workingimg.png",caption="A CNN model")
+        st.markdown("we did comparision with different model & techniques")
+        st.image("comparison.jpeg")
 elif choices == "About us":
         st.header("About us :")
         st.image("image.gif", format = 'GIF')
