@@ -70,9 +70,11 @@ if choices == "Classification":
                 if st.button('predict'):
                         st.write("result...")
                         label = classify.predict(uploaded_file)
+                        proba = label.argsort[0][-1]
+                        top = np.argsort(proba[0])[-1]
                         label = label.item()
 
-                        res = sign_names.get(label)
+                        res = sign_names.get(label,proba[top])
                         st.success(res)
         st.write("ARCHITECTURE:")
         st.image("architect..PNG")
