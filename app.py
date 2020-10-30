@@ -76,8 +76,11 @@ if choices == "Classification":
 
                         res = sign_names.get(label)
                         st.success(res)
-        st.write("ARCHITECTURE:")
-        st.image("architect..PNG")
+                st.image("workingimg.png")
+                st.write("")
+                st.markdown("we did comparision with different model & techniques")
+                st.write("")
+                st.image("comparison.jpeg")
 elif choices == "Working":
         st.header("Working")
         st.text("")
@@ -87,10 +90,9 @@ elif choices == "Working":
         st.write("We used the German data set to import the images into this project.The German Traffic Sign Benchmark is a multi-class, single-image classification challenge held at the International Joint Conference on Neural Networks (IJCNN) 2011.")
         st.text("")
         st.markdown("**_Working_** :")
+        st.write("ARCHITECTURE:")
+        st.image("architect..PNG")
         st.markdown('The starting step of this project was to load the data set, We have used the numpy library to calculate summary statistics of the traffic signs data set:The size of training set is 34799, The size of the validation set is 4410, The size of test set is 12630, The shape of a traffic sign image is (32, 32, 3), The number of unique classes/labels in the data set is 43. After that we explored,summarized and visualized the data set .Design, training and testing of the model architecture occured after we had visualized the whole data set. Then, we used the model to make predictions on new images and analyse the probabilities of the new image. Finally we test the model with a data set.And deployed the project to make an interactive web app using  streamlit.')
-        st.image("workingimg.png",caption="A CNN model")
-        st.markdown("we did comparision with different model & techniques")
-        st.image("comparison.jpeg")
 elif choices == "About us":
         st.header("About us :")
         st.image("image.gif", format = 'GIF')
