@@ -60,6 +60,7 @@ if choices == "Classification":
         st.image(traffic_image, caption = "Let the machine do the work")
         st.text("")
         uploaded_file = st.file_uploader("Choose an image...", type=['png','jpg','jpeg'])
+        st.write("Note : Currently pnh file is not working. We are working on it.")
         if uploaded_file is not None:
 
                 image = Image.open(uploaded_file)
