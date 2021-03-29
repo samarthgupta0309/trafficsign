@@ -47,12 +47,12 @@ sign_names = {
         40: 'Roundabout mandatory',
         41: 'End of no passing',
         42: 'End of no passing by vehicles over 3.5 metric tons'}
-st.title("ECE2010 Control systems J component")
+st.title("TRAFFIC SIGN CLASSIFIER")
 # st.set_option('deprecation.showfileUploaderEncoding', False)
 activities = ["Classification","Working","About us"]
 choices = st.sidebar.selectbox("Select Activities", activities)
 if choices == "Classification":
-        st.header("TRAFFIC SIGN CLASSIFICATION")
+#         st.header("TRAFFIC SIGN CLASSIFICATION")
         st.markdown("**_Motivation_** :")
         st.write("With the development of automotive intelligent technology,many different famous car companies like Mercedes-Benz and BMW have actively invested in ADAS (Advanced Driver Assistance System) research. Commercialized ADAS also include TSR(Traffic SignRecognition) systems to remind the drivers to pay attention to the speed and help in preventing road accidents. With the increase in demand of TSR (Traffic Sign Recognition) it is impossible for others to understand the advantages and need of thissystem")
         st.write("")
@@ -94,12 +94,12 @@ elif choices == "Working":
         st.write("ARCHITECTURE:")
         st.image("architect..PNG")
         st.markdown('The starting step of this project was to load the data set, We have used the numpy library to calculate summary statistics of the traffic signs data set:The size of training set is 34799, The size of the validation set is 4410, The size of test set is 12630, The shape of a traffic sign image is (32, 32, 3), The number of unique classes/labels in the data set is 43. After that we explored,summarized and visualized the data set .Design, training and testing of the model architecture occured after we had visualized the whole data set. Then, we used the model to make predictions on new images and analyse the probabilities of the new image. Finally we test the model with a data set.And deployed the project to make an interactive web app using  streamlit.')
-elif choices == "About us":
-        st.header("About us :")
-        st.image("image.gif", format = 'GIF')
-        st.write("We are 3rd year electronics and communication students and we have done this project for Control Systems under Dr Rajesh R.")
-        st.write("And we have made this project with understanding of algo of ml while incorporating deep leaning using  CNN and this is the final product which analyses different traffic signs and classifies them.")
-        st.write("**_TEAM_**")
-        images_on_page = ["kartik.jpeg","aryaman.jpeg","ankesh.jpeg","hritik.jpeg"]
-        name_img = ["Kartik Tripathi", "Aryaman Chandra","Ankesh Patel","Hritik Jha"]
-        st.image(images_on_page, width=150, caption=name_img)
+# elif choices == "About us":
+#         st.header("About us :")
+#         st.image("image.gif", format = 'GIF')
+#         st.write("We are 3rd year electronics and communication students and we have done this project for Control Systems under Dr Rajesh R.")
+#         st.write("And we have made this project with understanding of algo of ml while incorporating deep leaning using  CNN and this is the final product which analyses different traffic signs and classifies them.")
+#         st.write("**_TEAM_**")
+#         images_on_page = ["kartik.jpeg","aryaman.jpeg","ankesh.jpeg","hritik.jpeg"]
+#         name_img = ["Kartik Tripathi", "Aryaman Chandra","Ankesh Patel","Hritik Jha"]
+#         st.image(images_on_page, width=150, caption=name_img)
